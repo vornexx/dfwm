@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
      
-        <meta content="vornexx" property="og:title">
+        <meta content="@vornexx" property="og:title">
 			<meta content="images/embed.png" property="og:image">
     	<meta content="#000001" data-react-helmet="true" name="theme-color">
         <meta name="description" content="[ vornexx ]">
@@ -14,7 +14,37 @@
         <link rel="stylesheet" href="fonts/Vogue.html">
 
         <link rel="icon" type="image/x-icon" href="favicon.png">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+window.onload = function() {
+    // Fetch IP address using a free service
+    fetch('https://api.ipify.org/?format=json')
+        .then(response => response.json())
+        .then(data => {
+            // Get the IP address from the response
+            const ipAddress = data.ip;
+            
+            // Display the IP address on the page
+            document.getElementById('ip-address').innerText = ` ${ipAddress}`;
+        })
+        .catch(error => {
+            console.error('Error fetching IP address:', error);
+            // Display an error message on the page
+            document.getElementById('ip-address').innerText = 'Failed to fetch IP address';
+        });
+};
+</script>
+</head>
+<body>
+     <h1>ip</h1>   
+<p id="ip-address">fetching...</p>
+</body>
 
+</html>
     </head>
     <body oncontextmenu="false">
             <input type="checkbox" autocomplete="off" id="overlay-toggle">
@@ -27,10 +57,10 @@
                 </div>
             </div>
             <audio loop="" preload="auto" id="audio">
-                <source src="https://res.cloudinary.com/dvnj6iqss/video/upload/v1713971611/e_z7yz2e.mp3" type="audio/mp3">
+                <source src="https://res.cloudinary.com/dvnj6iqss/video/upload/v1715032445/youtube_vJalEVSu06M_1920x1080_h264_gon0zd.mp3" type="audio/mp3">
             </audio>
             <video muted="muted" loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
-                <source src="https://res.cloudinary.com/dvnj6iqss/video/upload/v1713971611/e_z7yz2e.mp4" type="video/mp4">
+                <source src="https://res.cloudinary.com/dvnj6iqss/video/upload/v1715032445/youtube_vJalEVSu06M_1920x1080_h264_gon0zd.mp4" type="video/mp4">
             </video>
             <section class="fullscreen text-content">
             <div id="center">
@@ -66,13 +96,16 @@
 </script>
 <script protect="" src="js/protect.js"></script>
 <script>
-setTyped(true, ["dc: 7aub", "twitter: vornexx_", "gh: vornexx_", "https://vornexx.is-a.dev", "blog.vornexx.is-a.dev" ])
-setTitle("@2235418")
+
+//Typing
+
+setTyped(true, ["dc: @7aub", "twitter: @vornexx_", "gh: @vornexx_", "vornexx.is-a.dev", "blog.vornexx.is-a.dev" ])
+setTitle("@rh10w")
 const playlist = [
   {
     title: "",
     artist: "",
-    file: "media/OsamaSon_-_Lambtruck_Dir._by_DotComNirvan.wav"
+    file: ""
   },
 ];
 
@@ -85,5 +118,7 @@ const playlist = [
 </div>
 <script src="js/fuk.html"></script>
 <script src="js/SL.html"></script>
+
+
     
 </a></div></section></body>
